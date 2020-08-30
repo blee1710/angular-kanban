@@ -9,10 +9,12 @@ import { HomePageComponent } from './home-page/home-page.component'
 
 import { environment } from '../environments/environment';
 
+
 //Firebase imports
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

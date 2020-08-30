@@ -30,14 +30,14 @@
   
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <span class="logo" routerLink="/">🍱 Angular Kanban</span>
+        <span class="logo" routerLink="/"> Angular Kanban</span>
   
         <span class="fill-space"></span>
         <div *ngIf="!(isHandset$ | async)">
-          <a mat-button routerLink="/kanban">🍱 Kanban Demo</a>
-          <a mat-button routerLink="/customers">⚡ SSR Demo</a>
+          <a mat-button routerLink="/kanban"> Kanban Demo</a>
+          <a mat-button routerLink="/customers"> SSR Demo</a>
   
-          <a mat-button routerLink="/login">🔑 Login</a>
+          <a mat-button routerLink="/login"> Login</a>
   
         </div>
   
@@ -48,10 +48,19 @@
         </button>
         
         <mat-menu #menu="matMenu">
-          <a mat-menu-item href="https://fireship.page.link/slack">
-            <i>💬</i>
-            <span>Chat on Slack</span>
+          <a mat-menu-item target="_blank" rel="noreferrer noopener" href="https://github.com/blee1710">
+            <fa-icon [icon]="faGithub"></fa-icon>
+            Check out my github!
           </a>
+          <a mat-menu-item target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/brandon-lee-a95b8b1a2/">
+            <fa-icon [icon]="faLinkedIn"></fa-icon>
+            Connect with me on LinkedIn!
+          </a>
+          <a mat-menu-item target="_blank" rel="noreferrer noopener" href="https://brndnlee.me/">
+            <fa-icon [icon]="faKeyboard"></fa-icon>
+            Check out my website!
+          </a>
+
         </mat-menu>
       </mat-toolbar>
   

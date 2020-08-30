@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faKeyboard } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-shell',
@@ -15,6 +17,10 @@ export class ShellComponent{
       map(result => result.matches),
       shareReplay()
     );
+
+  faGithub = faGithub;
+  faLinkedIn = faLinkedin;
+  faKeyboard = faKeyboard;
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 
