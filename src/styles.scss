@@ -21,29 +21,30 @@
 // hue. Available color palettes: https://material.io/design/color/
 
 /* For use in src/lib/core/theming/_palette.scss */
+/* Create more palletes at http://mcg.mbitson.com */
 $custom-purple: (
-    50 : #f1eff8,
-    100 : #ddd8ed,
-    200 : #c7bee1,
-    300 : #b0a3d5,
-    400 : #9f90cc,
-    500 : #8e7cc3,
-    600 : #8674bd,
-    700 : #7b69b5,
-    800 : #715fae,
-    900 : #5f4ca1,
-    A100 : #fefeff,
-    A200 : #d6cbff,
-    A400 : #ae98ff,
-    A700 : #9a7fff,
+    50 : #f6f4fa,
+    100 : #e9e5f3,
+    200 : #dad3eb,
+    300 : #cbc1e2,
+    400 : #bfb4dc,
+    500 : #b4a7d6,
+    600 : #ad9fd1,
+    700 : #a496cc,
+    800 : #9c8cc6,
+    900 : #8c7cbc,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e4dbff,
+    A700 : #d2c2ff,
     contrast: (
         50 : #000000,
         100 : #000000,
         200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
         700 : #ffffff,
         800 : #ffffff,
         900 : #ffffff,
@@ -53,6 +54,8 @@ $custom-purple: (
         A700 : #000000,
     )
 );
+
+
 
 
 
