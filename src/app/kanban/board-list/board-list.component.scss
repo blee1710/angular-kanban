@@ -3,6 +3,7 @@
     padding: 24px;
     display: flex;
     flex-direction: row;
+    height: 90vh;
     overflow-x: scroll;
     &::-webkit-scrollbar {
       height: 4px;
@@ -24,8 +25,7 @@
     
     .handle {
       position: relative;
-      top: 5px;
-      left: 0;
+      margin-left: auto;
       cursor: move;
     }
   }

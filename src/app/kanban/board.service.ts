@@ -21,7 +21,9 @@ export class BoardService {
     return this.db.collection('boards').add({
       ...data,
       uid: user.uid,
-      tasks: [{ description: 'Your first Kanban card!', label: 'yellow'}]
+      tasks: [{ description: 'Your first Kanban card!', label: 'yellow'},
+      { description: 'Click on a Kanban card to edit or delete it!', label: 'purple'},
+      { description: 'Drag and drop the cards(or boards) around!', label: 'blue'}]
     });
   }
 

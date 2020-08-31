@@ -7,10 +7,11 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { GoogleSigninDirective } from './google-signin.directive';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmailLoginComponent } from './email-login/email-login.component';
+import { AnonSigninDirective } from './anon-signin.directive';
 
 
 @NgModule({
-  declarations: [LoginPageComponent, GoogleSigninDirective, EmailLoginComponent],
+  declarations: [LoginPageComponent, GoogleSigninDirective, EmailLoginComponent, AnonSigninDirective],
   imports: [
     CommonModule,
     UserRoutingModule,
