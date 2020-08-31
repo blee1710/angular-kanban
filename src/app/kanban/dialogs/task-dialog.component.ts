@@ -31,6 +31,9 @@ import { BoardService } from '../board.service';
       {{ data.isNew ? 'Add Task' : 'Update Task' }}
     </button>
 
+    <app-delete-button (delete)="handleTaskDelete()" *ngIf="!data.isNew">
+    </app-delete-button>
+
   </div>
   `,
   styleUrls: ['./dialog.scss']
@@ -49,7 +52,7 @@ export class TaskDialogComponent {
     this.dialogRef.close();
   }
 
-  handleTaskDelete() {
+  handleTaskDelete(): void {
     this.ps.removeTask(this.data.boardId, this.data.task);
     this.dialogRef.close();
   }

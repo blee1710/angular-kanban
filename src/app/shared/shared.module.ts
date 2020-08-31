@@ -14,10 +14,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DeleteButtonComponent } from './delete-button/delete-button.component';
 
 
 const components = [
-  ShellComponent
+  ShellComponent, DeleteButtonComponent
 ];
 
 const modules = [
@@ -40,7 +41,7 @@ const modules = [
 
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
     ...modules,
