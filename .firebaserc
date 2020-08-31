@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "kanban-angular-3cb76": {
+      "hosting": {
+        "angular-kanban": [
+          "kanban-angular-3cb76"
+        ]
+      }
+    }
+  }
+}
