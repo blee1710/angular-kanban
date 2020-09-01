@@ -16,8 +16,10 @@
 
 <div *ngIf="afAuth.authState | async as user" class="logout">
     <p>
-      Logged in as <strong>{{ user.email }}</strong>
+      Logged in as <strong>{{ user.email }}</strong> <strong *ngIf="!user.email">Anonymous</strong>
     </p>
-
-    <button mat-stroked-button (click)="afAuth.signOut()">Logout</button>
+    <span>
+      <button routerLink="/kanban" mat-stroked-button>Go to Kanban</button>
+      <button mat-stroked-button (click)="afAuth.signOut()">Logout</button>
+    </span>
 </div>
